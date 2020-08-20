@@ -13,28 +13,28 @@ while True:
             print('Okay....i wont open it for you =\ ')
         else:    
             os.system('chrome')
-    if ('run' in p or 'open') and ('notepad' in p) or ('editor' in p):
+    elif ('run' in p or 'open') and ('notepad' in p) or ('editor' in p):
         if ('dont' in p or 'do not' in p):
             print('Okay....i wont open it for you =\ ')
         else:    
             os.system('notepad')
-    if ('run' in p or 'open') and ('media' in p) or ('player' in p) or ('windows media player' in p):
+    elif ('run' in p or 'open') and ('media' in p) or ('player' in p) or ('windows media player' in p):
         if ('dont' in p or 'do not' in p):
             print('Okay....i wont open it for you =\ ')
         else:    
             os.system('wmplayer')
-    if ('run' in p or 'open') and ('notebook' in p) or ('jupyter' in p):
+    elif ('run' in p or 'open') and ('notebook' in p) or ('jupyter' in p):
         if ('dont' in p or 'do not' in p or "don't" in p):
             print('Okay....i wont open it for you =\ ')
         else:    
             os.system('jupyter notebook')
-    if ('run' in p or 'open') and ('spotify' in p):
+    elif ('run' in p or 'open') and ('spotify' in p):
         if ('dont' in p or 'do not' in p or "don't" in p):
             print('Okay....i wont open it for you =\ ')
         else:    
             os.system('spotify')
     
-    if ('time' in p) and ('now' in p):
+    elif ('time' in p) and ('now' in p):
         if ('dont' in p or 'do not' in p or "don't" in p):
             print('Okay....i wont show it to you =\ ')
         else:    
@@ -42,7 +42,7 @@ while True:
             pyttsx3.speak(time_now)
             print(time_now)
             
-    if ('date' in p):
+    elif ('date' in p):
         if ('dont' in p or 'do not' in p or "don't" in p):
             print('Okay....i wont show it to you =\ ')
         else:    
@@ -51,21 +51,22 @@ while True:
             print("Today's Date is",today)
             
     
-    if ('run' in p or 'open') and (('stopwatch' in p) or ('timer' in p)):
+    elif ('run' in p or 'open') and (('stopwatch' in p) or ('timer' in p)):
         if ('dont' in p or 'do not' in p or "don't" in p):
             print('Okay....i wont  start timer for you =\ ')
         else:    
             helper_fn.stopwatch()
             
-    if ('run' in p or 'open' in p or 'search' in p) and ('wikipedia' in p):
+    elif ('run' in p or 'open' in p or 'search' in p) and ('wikipedia' in p):
         if ('dont' in p or 'do not' in p or "don't" in p):
             print('Okay....i wont open it for you =\ ')
         else:    
-            result = helper_fn.wiki()       
+            result = helper_fn.wiki()
+            print(result)
     
     
     
-    if 'break' in p or 'quit' in p:
+    elif 'break' in p or 'quit' in p:
         pyttsx3.speak('Goodbye and have a good day')
         break
         
