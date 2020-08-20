@@ -1,6 +1,6 @@
 ## Menu Driven Program
 
-A basic project shows the fundamental strength of a Programming.
+A basic project shows the fundamental strength of Programming.
 
 
 ### Basic requirements: 
