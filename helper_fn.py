@@ -41,3 +41,10 @@ def wiki():
     result = wikipedia.summary(search, sentences = 2)
     
     return result
+
+
+def testingfuntion():
+    """
+    This function is created by jerry
+    """
+    print("Tester")
